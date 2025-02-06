@@ -11,6 +11,18 @@ const colors = [
   "#ebd9fc",
   "#cdcd3b",
   "#e4112a",
+  "#CEC3C1",
+  "#DE3C4B",
+  "#F9DEC9",
+  "#685044",
+  "#E9AFA3",
+  "#FF8C42",
+  "#FFF275",
+  "#6C8EAD",
+  "#DBD9DB",
+  "#747572",
+  "#ACBFA4",
+  "#4A8FE7",
 ];
 
 let currentColors = [];
