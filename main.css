@@ -1,0 +1,203 @@
+/* Andy Bells CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom styles */
+body {
+  background-color: #eee;
+}
+
+.container {
+  background-color: #fff;
+  width: 800px;
+  max-width: 100%;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.game-area {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .game-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.game-area > :first-child {
+  flex: 2;
+}
+
+.game-area > :last-child {
+  flex: 1;
+}
+
+#target-color {
+  height: 250px;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  #target-color {
+    width: 270px;
+  }
+}
+
+#options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  grid-auto-rows: 90px;
+}
+
+#options button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.scores {
+  margin-bottom: 2.5rem;
+}
+
+.scores h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.how-to-play {
+  margin-top: 40px;
+}
+
+.how-to-play h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.how-to-play p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#new {
+  /* font-family: Inconsolata; */
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #new {
+    margin-top: 0;
+  }
+}
+
+#status {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  width: fit-content;
+  height: 24px;
+  line-height: 0;
+  margin-inline: auto;
+  padding: 18px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 130px;
+  right: 26px;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  #status {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
