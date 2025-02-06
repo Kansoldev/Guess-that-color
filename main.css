@@ -28,6 +28,7 @@ html:focus-within {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -146,7 +147,7 @@ body {
 }
 
 .how-to-play {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .how-to-play h2 {
