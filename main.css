@@ -93,12 +93,23 @@ body {
   }
 }
 
-.game-header h1 {
-  background: -webkit-linear-gradient(right, #e9afa3, #000, #4a8fe7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #000;
+#new {
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: auto;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  #new {
+    margin-top: 0;
+  }
 }
 
 .game-area {
@@ -136,7 +147,7 @@ body {
 #options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 10px;
   grid-auto-rows: 90px;
 }
 
@@ -153,7 +164,7 @@ body {
 }
 
 .scores {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .scores h2 {
@@ -173,22 +184,6 @@ body {
 .how-to-play p {
   font-size: 1.2rem;
   line-height: 1.5;
-}
-
-#new {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-
-@media (min-width: 768px) {
-  #new {
-    margin-top: 0;
-  }
 }
 
 #status {
