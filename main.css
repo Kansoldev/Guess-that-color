@@ -86,6 +86,14 @@ body {
   }
 }
 
+.game-header h1 {
+  background: -webkit-linear-gradient(right, #e9afa3, #000, #4a8fe7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .game-header {
     display: flex;
